@@ -8,6 +8,6 @@ RUN ./build.sh
 
 FROM scratch
 
-COPY --from=build /jammy-rootfs /
+COPY --from=build /rootfs /
 
 CMD ["sh"]

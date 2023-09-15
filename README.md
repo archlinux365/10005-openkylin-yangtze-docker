@@ -27,8 +27,8 @@
 ## 3 101-rootfs 干净纯净rootfs
 
 ```
-docker pull gnuhub/10004-ubuntu-lts-2204-docker-101-rootfs:latest
-docker run -it gnuhub/10004-ubuntu-lts-2204-docker-101-rootfs:latest bash
+docker pull gnuhub/10005-openkylin-yangtze-docker-101-rootfs:latest
+docker run -it gnuhub/10005-openkylin-yangtze-docker-101-rootfs:latest bash
 ```
 
 ## 3 root用户 安装一些常见包以及配置

@@ -11,7 +11,7 @@ cd $CMD_PATH
 apt update -y
 
 export DEBIAN_FRONTEND=noninteractive
-
+apt install wget -y
 wget http://archive.build.openkylin.top/openkylin/pool/main/d/debootstrap/debootstrap_1.0.118-ok3_all.deb
 
 apt install  -y ./debootstrap_1.0.118-ok3_all.deb

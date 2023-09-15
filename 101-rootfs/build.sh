@@ -13,4 +13,4 @@ apt update -y
 export DEBIAN_FRONTEND=noninteractive
 
 apt install debootstrap -y
-debootstrap --no-check-gpg --variant=minbase --include=usrmerge --components=main,multiverse,restricted,universe jammy /jammy-rootfs http://us.archive.ubuntu.com/ubuntu/
+debootstrap --no-check-gpg --variant=minbase --include=apt,ca-certificates,locales,sudo,systemd,openkylin-keyring --components=yangtze,main,cross,pty,yangtze /rootfs http://archive.build.openkylin.top/openkylin/

@@ -13,4 +13,4 @@ apt update -y
 export DEBIAN_FRONTEND=noninteractive
 
 apt install debootstrap -y
-debootstrap --arch=amd64 --no-check-gpg --variant=minbase --include=apt,ca-certificates,locales,sudo,systemd,openkylin-keyring --components=main,cross,pty,yangtze /rootfs yangtze http://archive.build.openkylin.top/openkylin/
+debootstrap --arch=amd64 --no-check-gpg --variant=minbase --include=apt,ca-certificates,locales,sudo,systemd,openkylin-keyring --components=main,cross,pty yangtze /rootfs  http://archive.build.openkylin.top/openkylin/

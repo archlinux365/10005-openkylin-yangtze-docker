@@ -12,5 +12,7 @@ apt update -y
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt install debootstrap -y
+wget http://archive.build.openkylin.top/openkylin/pool/main/d/debootstrap/debootstrap_1.0.118-ok3_all.deb
+
+apt install  -y ./debootstrap_1.0.118-ok3_all.deb
 debootstrap --arch=amd64 --no-check-gpg --variant=minbase --include=apt,ca-certificates,locales,sudo,systemd,openkylin-keyring --components=main,cross,pty yangtze /rootfs  http://archive.build.openkylin.top/openkylin/
